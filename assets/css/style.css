@@ -21,3 +21,21 @@ header{
     padding: 30px 18%;
     transition: .3s;
 }
+nav{
+    display: flex;
+}
+nav>img{
+    width: 179px;
+    height: 90px;
+}
+nav li{
+    display: inline-block;
+    position: relative;
+}
+
+nav a{
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+    padding: 10px 15px;
+}
