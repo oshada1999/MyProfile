@@ -16,74 +16,48 @@
           about my skills."/>
     <meta property="og:title" content="oshada hewage -FullStack Software Engineer"/>
 
-    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!---->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--animate.css import-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--import css Style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--fonts import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@900&display=swap" rel="stylesheet">
+
+    <title>Chathura Oshada</title>
 </head>
 <body>
+<!--<div id="pre-loarder">
+    <img src="assets/gif/preloader.gif" alt="">
+</div>-->
 <header>
+    <img src="assets/images/2 (4).png" alt="2 (4).png">
     <nav>
-        <table>
-            <tr>
-                <td><img
-                        id="home"
-                        src="asseth/images/2%20(4).png"
-                        alt="2%20(4).png"
-                        width="200"
-                        height="200"
-                        title="Home"
-                ></td>
-                <td>
-                    <a href="#home">
-                        <button type="button">Home</button>
-                    </a>
 
-                </td>
-                <td>
-                    <a href="#about">
-                        <button type="button">About</button>
-                    </a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
 
-                </td>
-                <td>
-                    <a href="#service">
-                        <button type="button">Service</button>
-                    </a>
-
-                </td>
-                <td>
-                    <a href="#skills">
-                        <button type="button">Skills</button>
-                    </a>
-
-                </td>
-                <td>
-                    <a href="#project">
-                        <button type="button">Projects</button>
-                    </a>
-
-                </td>
-                <td>
-                    <a href="#education">
-                        <button type="button">Education</button>
-                    </a>
-
-                </td>
-                <td>
-                    <a href="#contact">
-                        <button
-                                type="button">Contact
-                        </button>
-                    </a>
-
-                </td>
-                <td>
-                    <a href="asseth/dox/Doc1.pdf" download="oshada_hewage_cv.pdf">
-                        <button type="button">Download CV</button>
-                    </a>
-
-                </td>
-            </tr>
-        </table>
+        </ul>
     </nav>
+    <a href="assets/dox/Doc1.pdf" download="oshada_hewage_cv.pdf" class="top-button">Download CV</a>
+
 </header>
 <main>
     <section>
@@ -99,19 +73,19 @@
                                 <p>A Full-Stack Developer <b>From SriLanka</b></p>
                                 <p>i'm very passionate and dedicated to my work</p>
                                 <a href="https://www.facebook.com/chathura.hewage.9/">
-                                    <img src="asseth/images/icons8-facebook-circled.gif"
+                                    <img src="assets/images/icons8-facebook-circled.gif"
                                          alt="icons8-facebook-circled.gif">
                                 </a>
 
                                 <a href="https://www.linkedin.com/in/chathura-hewage-114565236/">
-                                    <img src="asseth/images/icons8-linkedin-circled.gif"
+                                    <img src="assets/images/icons8-linkedin-circled.gif"
                                          alt="icons8-linkedin-circled.gif">
                                 </a>
                                 <a href="https://github.com/oshada1999">
-                                    <img src="asseth/images/icons8-github.gif" alt="icons8-github.gif">
+                                    <img src="assets/images/icons8-github.gif" alt="icons8-github.gif">
                                 </a>
 
-                                <img src="asseth/images/icons8-twitter-circled%20(1).gif"
+                                <img src="assets/images/icons8-twitter-circled%20(1).gif"
                                      alt="icons8-twitter-circled%20(1).gif"><br>
 
                                 <a href="#about">
@@ -120,7 +94,7 @@
 
                             </td>
                             <td>
-                                <img src="asseth/images/New%20Project%20(2).png" alt="New%20Project%20(2).png">
+                                <img src="assets/images/New%20Project%20(2).png" alt="New%20Project%20(2).png">
                             </td>
                         </tr>
 
@@ -134,12 +108,16 @@
         <table width="100%">
             <tr>
                 <td>
-                    <img
-                            id="about"
-                            src="asseth/images/New%20Project%20(7).png"
-                            alt="New%20Project%20(7).png "
-                            width="500"
-                    >
+                    <div data-aos="fade-up"
+                         data-aos-duration="3000">
+                        <img
+                                id="about"
+                                src="assets/images/New%20Project%20(7).png"
+                                alt="New%20Project%20(7).png "
+                                width="500"
+                        >
+                    </div>
+
                 </td>
                 <td>
                     <p>I'm Developer</p>
@@ -177,7 +155,7 @@
                     </table>
                     <br>
                     <a href="tel:+94702229087">
-                        <button type="button">Hire Me</button>
+                        <button type="button" class="animate__heartBeat animate__delay infinite" >Hire Me</button>
                     </a>
 
                 </td>
@@ -186,73 +164,76 @@
     </section>
     <section>
         <!---------------------------------------------------------Service-------------------------------------------------------------------->
-        <table width="100%">
-            <tr>
-                <td>
-                    <h1 id="service">Service</h1>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3"><h3>What I Do For Clients</h3></td>
-            </tr>
-            <tr>
-                <td>
-                    <table border="1">
-                        <tr>
-                            <td>
-                                <img src="asseth/images/icons8-software-64%20(3).png"
-                                     alt="icons8-software-64%20(3).png"
-                                     width="64">
-                                <h2>Software Development</h2>
-                                <p>
-                                    All standalone software development with
-                                    Java, JavaFX, MySQL, SpringBoot and
-                                    Hibernate
-                                </p>
+        <div data-aos="zoom-in">
+            <table width="100%">
+                <tr>
+                    <td>
+                        <h1 id="service"  class="animate__animated animate__bounce">Service</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><h3>What I Do For Clients</h3></td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="1">
+                            <tr>
+                                <td>
+                                    <img src="assets/images/icons8-software-64%20(3).png"
+                                         alt="icons8-software-64%20(3).png"
+                                         width="64">
+                                    <h2>Software Development</h2>
+                                    <p>
+                                        All standalone software development with
+                                        Java, JavaFX, MySQL, SpringBoot and
+                                        Hibernate
+                                    </p>
 
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
 
-                    </table>
-
-
-                </td>
-                <td>
-                    <table border="1">
-                        <tr>
-                            <td>
-                                <img src="asseth/images/icons8-web-development-99.png"
-                                     alt="icons8-web-development-99.png" width="64">
-                                <h2>Web Design</h2>
-                                <p>
-                                    E-commerce websites, Blogs development
-                                    with JavaScript, CSS and HTML.
-                                </p>
-
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table border="1">
-                        <tr>
-                            <td>
-                                <img src="asseth/images/icons8-windows-10-personalization-100.png"
-                                     alt="icons8-windows-10-personalization-100.png" width="64">
-                                <h2>UI/UX Design</h2>
-                                <p>
-                                    Mobile apps, Web site design,etc..
-                                </p>
-
-                            </td>
-                        </tr>
-                    </table>
+                        </table>
 
 
-                </td>
+                    </td>
+                    <td>
+                        <table border="1">
+                            <tr>
+                                <td>
+                                    <img src="assets/images/icons8-web-development-99.png"
+                                         alt="icons8-web-development-99.png" width="64">
+                                    <h2>Web Design</h2>
+                                    <p>
+                                        E-commerce websites, Blogs development
+                                        with JavaScript, CSS and HTML.
+                                    </p>
 
-            </tr>
-        </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table border="1">
+                            <tr>
+                                <td>
+                                    <img src="assets/images/icons8-windows-10-personalization-100.png"
+                                         alt="icons8-windows-10-personalization-100.png" width="64">
+                                    <h2>UI/UX Design</h2>
+                                    <p>
+                                        Mobile apps, Web site design,etc..
+                                    </p>
+
+                                </td>
+                            </tr>
+                        </table>
+
+
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
     </section>
     <section>
         <!---------------------------------------------------------Skills-------------------------------------------------------------------->
@@ -268,7 +249,7 @@
                     <table border="1">
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-java-240.png" alt="icons8-java-240.png">
+                                <img src="assets/images/icons8-java-240.png" alt="icons8-java-240.png">
                                 <h3>Java</h3>
                             </td>
                         </tr>
@@ -278,7 +259,7 @@
                     <table border="1">
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-html-5-240.png"
+                                <img src="assets/images/icons8-html-5-240.png"
                                      alt="icons8-html-5-240.png">
                                 <h3>HTML</h3>
                             </td>
@@ -289,7 +270,7 @@
                     <table border="1">
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-mysql-logo-240.png"
+                                <img src="assets/images/icons8-mysql-logo-240.png"
                                      alt="icons8-mysql-logo-240.png">
                                 <h3>MySQL</h3>
                             </td>
@@ -302,7 +283,7 @@
                     <table border="1">
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-github-256.png"
+                                <img src="assets/images/icons8-github-256.png"
                                      alt="icons8-github-256.png" width="240">
                                 <h3>GitHub</h3>
                             </td>
@@ -313,7 +294,7 @@
                     <table border="1">
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-adobe-photoshop-240.png"
+                                <img src="assets/images/icons8-adobe-photoshop-240.png"
                                      alt="icons8-adobe-photoshop-240.png">
                                 <h3>PhotoShop</h3>
                             </td>
@@ -324,7 +305,7 @@
                     <table border="1">
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-javascript-240.png"
+                                <img src="assets/images/icons8-javascript-240.png"
                                      alt="icons8-javascript-240.png">
                                 <h3>JavaScript</h3>
                             </td>
@@ -337,7 +318,7 @@
                     <table border="1">
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-css3-240.png" alt="icons8-css3-240.png">
+                                <img src="assets/images/icons8-css3-240.png" alt="icons8-css3-240.png">
                                 <h3>CSS</h3>
                             </td>
                         </tr>
@@ -357,11 +338,11 @@
             </tr>
             <tr>
                 <td>
-                    <img src="asseth/images/Screenshot%202023-03-09%20150555.png"
+                    <img src="assets/images/Screenshot%202023-03-09%20150555.png"
                          alt="Screenshot%202023-03-09%20150555.png" width="250">
                 </td>
                 <td>
-                    <img src="asseth/images/Screenshot_20230224_074405.png"
+                    <img src="assets/images/Screenshot_20230224_074405.png"
                          alt="Screenshot_20230224_074405.png" width="250">
                 </td>
             </tr>
@@ -396,7 +377,7 @@
             </tr>
             <tr>
                 <td>
-                    <img src="asseth/images/ww.png"
+                    <img src="assets/images/ww.png"
                          alt="Screenshot_20230224_075752.png" width="250">
                 </td>
             </tr>
@@ -506,20 +487,20 @@
                         <tr>
 
                             <td>
-                                <img id="travel" src="asseth/images/IMG_8749.JPG" alt="IMG_8749.JPG"
+                                <img id="travel" src="assets/images/IMG_8749.JPG" alt="IMG_8749.JPG"
                                      width="400">
                             </td>
                             <td>
-                                <img src="asseth/images/IMG_8325.jpg" alt="IMG_8325.jpg" width="450">
+                                <img src="assets/images/IMG_8325.jpg" alt="IMG_8325.jpg" width="450">
                             </td>
                             <td>
-                                <img id="caption" src="asseth/images/IMG_8747.jpg" alt="IMG_8747.jpg"
+                                <img id="caption" src="assets/images/IMG_8747.jpg" alt="IMG_8747.jpg"
                                      width="200">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <img id="event" src="asseth/images/Screenshot_20230224_081753.png"
+                                <img id="event" src="assets/images/Screenshot_20230224_081753.png"
                                      alt="Screenshot_20230224_081753.png" width="400" height="200">
                             </td>
                         </tr>
@@ -539,7 +520,7 @@
                     <table>
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-user-90.png" alt="icons8-user-90.png"
+                                <img src="assets/images/icons8-user-90.png" alt="icons8-user-90.png"
                                      width="25">
                             </td>
                             <td>
@@ -549,7 +530,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-user-location-64.png"
+                                <img src="assets/images/icons8-user-location-64.png"
                                      alt="icons8-user-location-64.png" width="25">
                             </td>
                             <td>
@@ -562,7 +543,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-mail-90.png" alt="icons8-mail-90.png"
+                                <img src="assets/images/icons8-mail-90.png" alt="icons8-mail-90.png"
                                      width="25">
                             </td>
                             <td>
@@ -572,7 +553,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="asseth/images/icons8-call-male-96.png"
+                                <img src="assets/images/icons8-call-male-96.png"
                                      alt="icons8-call-male-96.png" width="25">
                             </td>
                             <td>
@@ -663,28 +644,41 @@
             </td>
             <td>
                 <a href="https://www.linkedin.com/in/chathura-hewage-114565236/">
-                    <img src="asseth/images/icons8-linkedin-50.png" alt="icons8-linkedin-50.png">
+                    <img src="assets/images/icons8-linkedin-50.png" alt="icons8-linkedin-50.png">
                 </a>
 
             </td>
             <td>
                 <a href="https://www.facebook.com/chathura.hewage.9/">
-                    <img src="asseth/images/icons8-facebook-50.png" alt="icons8-facebook-50.png">
+                    <img src="assets/images/icons8-facebook-50.png" alt="icons8-facebook-50.png">
                 </a>
 
             </td>
             <td>
                 <a href="https://github.com/oshada1999">
-                    <img src="asseth/images/icons8-github-50.png" alt="icons8-github-50.png">
+                    <img src="assets/images/icons8-github-50.png" alt="icons8-github-50.png">
                 </a>
 
             </td>
             <td>
-                <img src="asseth/images/icons8-youtube-250.png" alt="icons8-youtube-250.png" width="50">
+                <img src="assets/images/icons8-youtube-250.png" alt="icons8-youtube-250.png" width="50">
             </td>
         </tr>
     </table>
 </footer>
+<!--import AOS lib js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/lib/jquery-3.6.4.min.js"></script>
+<script>
+    AOS.init();//init AOS
+
+    $(document).ready(() => {
+        setTimeout(()=>{
+            $('#pre-loarder').css({display : "none"});
+        },1000)
+
+    })
+</script>
 
 </body>
 
