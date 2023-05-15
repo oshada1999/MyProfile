@@ -39,3 +39,16 @@ nav a{
     font-weight: 100;
     padding: 10px 15px;
 }
+nav a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: chocolate;
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+nav a:hover::after{
+    width: 100%;
+}
