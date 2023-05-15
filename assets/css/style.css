@@ -43,6 +43,7 @@ nav a{
     color: black;
     font-weight: 100;
     padding: 10px 15px;
+    transition: ease,.50s;
 }
 nav a::after{
     content: "";
@@ -53,9 +54,12 @@ nav a::after{
     bottom: -3px;
     left: 0;
     transition: ease .40s;
+
 }
 nav a:hover::after{
     width: 100%;
+    box-shadow: 1px 1px 10px 2px ;
+    transform: scale(1.1);
 }
 header.sticky{
     padding: 5px 100px;
@@ -80,4 +84,10 @@ header.sticky{
     color: white;
     border: 2px solid #591C21;
     box-shadow: 1px 1px 10px 2px #966774;
+}
+@media all and (max-width: 475px){
+    nav{
+        background-color: black;
+    }
+
 }
