@@ -126,7 +126,7 @@ header.sticky{
         left:0;
         right:0;
         flex-direction: column;
-        background: #A62B1F;
+        background: #023535;
         text-align: right;
         transition: all .50s;
 
@@ -135,7 +135,7 @@ header.sticky{
         display: block;
         padding: 1.2rem;
         margin: 1.5rem;
-        border-right:2px solid brown ;
+        border-right:2px solid white ;
         color: white;
     }
     .navlist a:hover{
