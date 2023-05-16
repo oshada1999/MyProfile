@@ -108,9 +108,7 @@ header.sticky{
         display: block;
         justify-content: center;
         cursor: pointer;
-        position: relative;
-        /* right: 558px; */
-        left: 110px;
+
     }
 
     header{
@@ -157,7 +155,5 @@ header.sticky{
 
 }
 @media all and (min-width: 425px) and (max-width: 768px) {
-    #menu-icon{
-        left: 60px;
-    }
+
 }
