@@ -93,7 +93,7 @@ header.sticky{
     flex-grow: 2;
 }
 main>section:nth-child(1){
-    padding-top: 125px ;
+    padding: 100px 18%;
 }
 .home{
     min-height: 100vh;
@@ -103,21 +103,10 @@ main>section:nth-child(1){
     background-size: cover;
     background-position: center;
     position: relative;
-
-}
-.te-img-home{
-
-    width: 100vw;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     grid-gap: 4rem;
-}
-.home-text{
-    padding-left: 275px;
-}
-.home-img{
-    padding-left: 60px;
 
 }
 
@@ -170,23 +159,69 @@ h5>span{
 .home-text .btn:hover{
     transform:scale(1.1) ;
 }
+.home-img img{
+    max-width: 100%;
+    width: 540px;
+    height: auto;
+}
+
 @media all and (max-width: 1425px){
+
+    main>section:nth-child(1){
+        padding: 10px 3%;
+        transition: .3s;
+    }
     header{
         padding: 10px 3%;
         transition: .3s;
     }
-    header.sticky{
+    header.sticky {
         padding: 10px 3%;
-        transition: .3s;
+        transition: .3s
     }
-    .home-text{
-        padding-left: 44px;
-        transition: .3s;
+    .home-text h1{
+        font-size: 3rem;
+        transition: .3s
     }
-    
+    .home-text h3{
+        font-size: 1.3rem;
+        transition: .3s
+    }
+    .home-text p{
+        font-size: 1rem;
+        transition: .3s
+    }
+
 
 }
 @media all and (max-width: 1024px){
+    .home-img{
+        text-align: center;
+    }
+    .home-img img{
+        width: 440px;
+        height: auto;
+    }
+    .home-text{
+        padding-top: 100px;
+    }
+    .home-text h1 {
+        font-size: 42px;
+        transition: .3s
+    }
+    .home-text h5{
+        font-size: 18px;
+        transition: .3s
+    }
+    .home-text p{
+        font-size: 15px;
+        transition: .3s;
+    }
+    .home-text{
+        padding-left: 15px;
+        transition: .3s;
+    }
+
     #menu-icon{
         display: block;
         justify-content: center;
@@ -237,6 +272,31 @@ h5>span{
     }
 
 }
-@media all and (min-width: 425px) and (max-width: 768px) {
+@media all and (max-width: 800px) {
+    .home{
+        grid-template-columns: 1fr;
+        min-height: 130vh;
+        grid-gap: 1rem;
+    }
+}
+@media all and (max-width: 375px) {
 
+}
+@media all and (max-width: 320px) {
+    .home-text h1 {
+        font-size: 38px;
+        transition: .3s
+    }
+    .home-text h5{
+        font-size: 15px;
+        transition: .3s
+    }
+    .home-text p{
+        font-size: 13px;
+        transition: .3s
+    }
+    .home-text h3{
+        font-size: 18px;
+        transition: .3s
+    }
 }
