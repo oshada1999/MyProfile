@@ -280,11 +280,25 @@ h5>span{
     }
 }
 @media all and (max-width: 375px) {
-
+    .home-text h1 {
+        font-size: 39px;
+        transition: .3s
+    }
+    .home-text h5{
+        font-size: 15px;
+        transition: .3s
+    }
+    .home-text p{
+        font-size: 13px;
+        transition: .3s
+    }
 }
 @media all and (max-width: 320px) {
+    .top-button {
+        font-size: 12px;
+    }
     .home-text h1 {
-        font-size: 38px;
+        font-size: 35px;
         transition: .3s
     }
     .home-text h5{
