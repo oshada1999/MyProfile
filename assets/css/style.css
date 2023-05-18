@@ -92,7 +92,7 @@ header.sticky{
     text-align: center;
     flex-grow: 2;
 }
-main>section:nth-child(1){
+main>section{
     padding: 100px 18%;
 }
 .home{
@@ -145,7 +145,7 @@ h5>span{
     color: #000000;
     margin-bottom: 30px;
 }
-.home-text .btn{
+.btn{
     display: inline-block;
     color: white;
     background: #8C1F28;
@@ -156,7 +156,7 @@ h5>span{
     border-radius: 30px;
     transition: ease .40s;
 }
-.home-text .btn:hover{
+ .btn:hover{
     transform:scale(1.1) ;
 }
 .home-img img{
@@ -164,7 +164,34 @@ h5>span{
     width: 540px;
     height: auto;
 }
-
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.about-img img{
+    max-width: 90%;
+    width: 400px;
+    height: auto;
+}
+.about-text h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 8px 0px 25px;
+    line-height: 1.1;
+}
+.about-text h3{
+    color: #BB4A45;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-text p{
+    max-width: 550px;
+    font-size: 15px;
+    color: #615858;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
 @media all and (min-width: 1440px) {
     .text{
         font-size: 27px;
@@ -278,7 +305,7 @@ h5>span{
         top: 100%;
     }
     .text{
-        font-size: 27px;
+        font-size: 25px;
     }
 
 }
@@ -306,12 +333,12 @@ h5>span{
         transition: .3s
     }
     .text{
-        font-size: 27px;
+        font-size: 22px;
     }
 }
 @media all and (max-width: 320px) {
     .text{
-        font-size: 27px;
+        font-size: 20px;
     }
     .top-button {
         font-size: 12px;
