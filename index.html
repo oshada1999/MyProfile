@@ -66,7 +66,7 @@
             <div class="home-text">
                 <h3>Hello,I'm</h3>
                 <h1>Oshada hewage</h1>
-                <h5>A Full-Stack Developer <span>From SriLanka</span></h5>
+                <h5>And I'm a <span class="text"></span></h5>
                 <p>i'm very passionate and dedicated to my work</p>
                 <div class="social">
                     <a href="https://www.facebook.com/chathura.hewage.9/"><i
@@ -698,6 +698,7 @@
 <!--import AOS lib js-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/lib/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
     AOS.init();//init AOS
 
@@ -723,7 +724,13 @@
     }
 </script>
 <script>
-
+   var type=new Typed(".text",{
+       strings:["UX Designer","YouTuber","Web Developer","Freelancer"],
+       typeSpeed:100,
+       backSpeed:100,
+       backDelay:500,
+       loop:true
+   })
 </script>
 
 </body>

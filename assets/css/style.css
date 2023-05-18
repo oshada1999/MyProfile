@@ -99,7 +99,7 @@ main>section:nth-child(1){
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background: url("../images/white-painted-wall-texture-background.jpg");
+    background: url("../images/osh.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -165,7 +165,12 @@ h5>span{
     height: auto;
 }
 
-@media all and (max-width: 1425px){
+@media all and (min-width: 1440px) {
+    .text{
+        font-size: 27px;
+    }
+}
+@media all and (max-width: 1440px){
 
     main>section:nth-child(1){
         padding: 10px 3%;
@@ -191,7 +196,9 @@ h5>span{
         font-size: 1rem;
         transition: .3s
     }
-
+    .text{
+        font-size: 27px;
+    }
 
 }
 @media all and (max-width: 1024px){
@@ -270,6 +277,9 @@ h5>span{
     .navlist.active{
         top: 100%;
     }
+    .text{
+        font-size: 27px;
+    }
 
 }
 @media all and (max-width: 800px) {
@@ -277,6 +287,9 @@ h5>span{
         grid-template-columns: 1fr;
         min-height: 130vh;
         grid-gap: 1rem;
+    }
+    .text{
+        font-size: 27px;
     }
 }
 @media all and (max-width: 375px) {
@@ -292,8 +305,14 @@ h5>span{
         font-size: 13px;
         transition: .3s
     }
+    .text{
+        font-size: 27px;
+    }
 }
 @media all and (max-width: 320px) {
+    .text{
+        font-size: 27px;
+    }
     .top-button {
         font-size: 12px;
     }
@@ -306,7 +325,7 @@ h5>span{
         transition: .3s
     }
     .home-text p{
-        font-size: 13px;
+        font-size: 12px;
         transition: .3s
     }
     .home-text h3{
