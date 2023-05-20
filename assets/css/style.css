@@ -203,6 +203,10 @@ h5>span{
         padding: 10px 3%;
         transition: .3s;
     }
+    main>section:nth-child(2){
+        padding: 10px 3%;
+        transition: .3s;
+    }
     header{
         padding: 10px 3%;
         transition: .3s;
@@ -230,6 +234,9 @@ h5>span{
 }
 @media all and (max-width: 1024px){
     .home-img{
+        text-align: center;
+    }
+    .about-img{
         text-align: center;
     }
     .home-img img{
@@ -305,7 +312,7 @@ h5>span{
         top: 100%;
     }
     .text{
-        font-size: 25px;
+        font-size: 24px;
     }
 
 }
@@ -317,6 +324,15 @@ h5>span{
     }
     .text{
         font-size: 27px;
+    }
+    .about{
+        grid-template-columns: 1fr;
+        min-height: 130vh;
+        grid-gap: 1rem;
+    }
+    .about-img{
+        align-items: center;
+        margin-bottom: 30px;
     }
 }
 @media all and (max-width: 375px) {
