@@ -367,6 +367,12 @@ h5>span{
 }
 @media all and (max-width: 375px) {
 
+    .about-text h2 {
+        font-size: 27px;
+    }
+    .about-text p {
+        font-size: 13px;
+    }
     .home-text h1 {
         font-size: 39px;
         transition: .3s
