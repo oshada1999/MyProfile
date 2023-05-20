@@ -103,11 +103,20 @@ main>section{
     background-size: cover;
     background-position: center;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
     align-items: center;
-    grid-gap: 4rem;
+    /*grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 4rem;*/
 
+}
+.home-text{
+    height: 100%;
+    width: 100%;
+}
+.home-img{
+    height: 100%;
+    width: 100%;
 }
 
 .home-text h3{
@@ -200,11 +209,11 @@ h5>span{
 @media all and (max-width: 1440px){
 
     main>section:nth-child(1){
-        padding: 10px 3%;
+        padding: 100px 3%;
         transition: .3s;
     }
     main>section:nth-child(2){
-        padding: 10px 3%;
+        padding: 100px 3%;
         transition: .3s;
     }
     header{
@@ -232,7 +241,11 @@ h5>span{
     }
 
 }
-@media all and (max-width: 1024px){
+@media all and (max-width: 1020px){
+    .about-text h2 {
+        font-size: 32px;
+    }
+
     .home-img{
         text-align: center;
     }
@@ -316,11 +329,28 @@ h5>span{
     }
 
 }
+@media all and (min-width: 800px) and (max-width: 1020px) {
+
+    .about-text p {
+        font-size: 13px;
+    }
+}
+@media all and (min-width: 425px) and (max-width: 800px) {
+    .about-text h2 {
+        font-size: 32px;
+    }
+    .about-text p {
+        font-size: 14px;
+    }
+}
 @media all and (max-width: 800px) {
+
+
+    .about-text h3 {
+        font-size: 18px;
+    }
     .home{
-        grid-template-columns: 1fr;
-        min-height: 130vh;
-        grid-gap: 1rem;
+        flex-direction: column-reverse;
     }
     .text{
         font-size: 27px;
@@ -336,6 +366,7 @@ h5>span{
     }
 }
 @media all and (max-width: 375px) {
+
     .home-text h1 {
         font-size: 39px;
         transition: .3s
