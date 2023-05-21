@@ -285,6 +285,7 @@ h5>span{
         padding: 100px 3%;
         transition: .3s;
     }
+
     header{
         padding: 10px 3%;
         transition: .3s;
@@ -406,6 +407,9 @@ h5>span{
     }
 }
 @media all and (min-width: 425px) and (max-width: 800px) {
+
+
+
     .about-text h2 {
         font-size: 32px;
     }
@@ -414,9 +418,7 @@ h5>span{
     }
 }
 @media all and (max-width: 800px) {
-
-
-    .about-text h3 {
+     .about-text h3 {
         font-size: 18px;
     }
     .home{
@@ -433,6 +435,16 @@ h5>span{
     .about-img{
         align-items: center;
         margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 600px) {
+    .service-content {
+        grid-template-columns:repeat(auto-fit, minmax(250px, auto));
+    }
+}
+@media all and (max-width: 450px) {
+    .service-content {
+        grid-template-columns:repeat(auto-fit, minmax(200px, auto));
     }
 }
 @media all and (max-width: 375px) {
