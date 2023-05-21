@@ -277,40 +277,53 @@ h5>span{
 }
 .col:nth-child(1):hover{
 
-    background: #A4BCBE;
+    background: #698591;
     box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
     transition: .5s;
 }
 .col:nth-child(1):hover .s.se-one img{
     background:  white;
 }
+.col:nth-child(1):hover #one-p{
+    color: #ffffff;
+    font-size: 20px;
+}
 .col:nth-child(2):hover{
-    background: #D2CFA3;
+    background: #B4A275;
     box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
     transition: .5s;
+
 }
 .col:nth-child(2):hover .s.se-two img{
     background:  white;
 }
-
+.col:nth-child(2):hover #two-p{
+    color: #ffffff;
+    font-size: 20px;
+}
 .col:nth-child(3):hover{
-    background: #D9CFF0;
+    background: #A98FE0;
     box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
     transition: .5s;
 }
 .col:nth-child(3):hover .s.se-tree img{
     background:  white;
 }
+.col:nth-child(3):hover #tree-p{
+    color: #ffffff;
+    font-size: 20px;
+}
 .col:nth-child(4):hover{
-    background: #F1C395;
+    background: #F5B577;
     box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
     transition: .5s;
 }
 .col:nth-child(4):hover .s.se-four img{
     background:  white;
 }
-.col:nth-child(4):hover .col:nth-child(4) p{
-    color: white;
+.col:nth-child(4):hover #four-p{
+    color: #ffffff;
+    font-size: 20px;
 }
 @media all and (min-width: 1440px) {
     .text{
