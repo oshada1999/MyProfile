@@ -264,15 +264,16 @@ h5>span{
     color:#615858;
     line-height: 28px;
 }
+.col:hover{
+    will-change: transform;
+    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+}
 @media all and (min-width: 1440px) {
     .text{
         font-size: 27px;
     }
 }
 @media all and (max-width: 1440px){
-    .service-content{
-        grid-template-columns:repeat(auto-fit,minmax(197px,auto));
-    }
     main>section:nth-child(1){
         padding: 100px 3%;
         transition: .3s;
@@ -307,9 +308,7 @@ h5>span{
 
 }
 @media all and (max-width: 1020px){
-    .service-content{
-        grid-template-columns:repeat(auto-fit,minmax(245px,auto));
-    }
+
     .about-text h2 {
         font-size: 32px;
     }
