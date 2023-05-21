@@ -118,7 +118,11 @@ main>section{
     height: 100%;
     width: 100%;
 }
-
+.home-img img:hover{
+    will-change: transform;
+    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+    transition: ease .45s;
+}
 .home-text h3{
     font-size: 20px;
     font-weight: 500;
@@ -269,7 +273,44 @@ h5>span{
 }
 .col:hover{
     will-change: transform;
-    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+    transform: perspective(1000px) rotateX(10.23deg) rotateY(4.80deg) scale3d(1.05,1.05,1.05);
+}
+.col:nth-child(1):hover{
+
+    background: #A4BCBE;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+    transition: .5s;
+}
+.col:nth-child(1):hover .s.se-one img{
+    background:  white;
+}
+.col:nth-child(2):hover{
+    background: #D2CFA3;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+    transition: .5s;
+}
+.col:nth-child(2):hover .s.se-two img{
+    background:  white;
+}
+
+.col:nth-child(3):hover{
+    background: #D9CFF0;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+    transition: .5s;
+}
+.col:nth-child(3):hover .s.se-tree img{
+    background:  white;
+}
+.col:nth-child(4):hover{
+    background: #F1C395;
+    box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
+    transition: .5s;
+}
+.col:nth-child(4):hover .s.se-four img{
+    background:  white;
+}
+.col:nth-child(4):hover .col:nth-child(4) p{
+    color: white;
 }
 @media all and (min-width: 1440px) {
     .text{
