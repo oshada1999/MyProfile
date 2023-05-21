@@ -277,7 +277,7 @@ h5>span{
 }
 .col:nth-child(1):hover{
 
-    background: #698591;
+    background: #91A5AE;
     box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
     transition: .5s;
 }
@@ -289,7 +289,7 @@ h5>span{
     font-size: 20px;
 }
 .col:nth-child(2):hover{
-    background: #B4A275;
+    background: #D1CFA8;
     box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
     transition: .5s;
 
@@ -314,7 +314,7 @@ h5>span{
     font-size: 20px;
 }
 .col:nth-child(4):hover{
-    background: #F5B577;
+    background: #FDB96F;
     box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
     transition: .5s;
 }
