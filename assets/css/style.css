@@ -255,7 +255,7 @@ h5>span{
     background: #FEA755;
 }
 .col h3{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 19px;
 }
@@ -263,6 +263,9 @@ h5>span{
     font-size: 15px;
     color:#615858;
     line-height: 28px;
+}
+.col span{
+    font-size: 32px;
 }
 .col:hover{
     will-change: transform;
