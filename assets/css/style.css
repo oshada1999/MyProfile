@@ -314,7 +314,7 @@ h5>span{
     font-size: 20px;
 }
 .col:nth-child(4):hover{
-    background: #FDB96F;
+    background: #E2C39C;
     box-shadow: -5px 5px 10px 0 rgba(0,0,0,0.4);
     transition: .5s;
 }
@@ -497,6 +497,9 @@ h5>span{
     }
 }
 @media all and (max-width: 450px) {
+    main>section:nth-child(3) {
+        padding: 100px 8%;
+    }
     .service-content {
         grid-template-columns:repeat(auto-fit, minmax(200px, auto));
     }
