@@ -34,6 +34,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
+    <!--import unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--import swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
     <title>Chathura Oshada</title>
 </head>
@@ -207,6 +211,62 @@
                 <h3>Photoshop</h3>
             </div>
         </div>
+    </section>
+    <!--projects-->
+    <section class="project" id="project">
+        <div class="heading">
+            <h2>My<span>Project</span></h2>
+            <h3>Recently Contribute</h3>
+        </div>
+        <div class="project-section container swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="project_content grid swiper-slide">
+                    <img src="assets/images/Rectangle 41.png" alt="Rectangle 41.png" class="img">
+                    <div class="project-data">
+                        <h3 class="project-title">Hospital Management System
+                            JavaFX,Layered Architecture</h3>
+                        <div  class="btn-project">
+                            <a href="https://github.com/oshada1999/FamilyHospital-layered">View GitHub
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="project_content grid swiper-slide">
+                    <img src="assets/images/Rectangle 41.png" alt="Rectangle 41.png" class="img">
+                    <div class="project-data">
+                        <h3 class="project-title">Hospital Management System
+                            JavaFX,Layered Architecture</h3>
+                        <div  class="btn-project">
+                            <a href="https://github.com/oshada1999/FamilyHospital-layered">View GitHub
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="project_content grid swiper-slide">
+                    <img src="assets/images/Rectangle 41.png" alt="Rectangle 41.png" class="img">
+                    <div class="project-data">
+                        <h3 class="project-title">Hospital Management System
+                            JavaFX,Layered Architecture</h3>
+                        <div  class="btn-project">
+                            <a href="https://github.com/oshada1999/FamilyHospital-layered">View GitHub
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--add rows-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
     </section>
 </main>
 <!--<main>
@@ -820,6 +880,8 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/lib/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!--swiper JS-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
     AOS.init();//init AOS
 
@@ -852,6 +914,21 @@
        backDelay:500,
        loop:true
    })
+</script>
+<!--project swiper-->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
 </script>
 
 </body>

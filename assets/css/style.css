@@ -403,6 +403,23 @@ h5>span{
     height: 95px;
 
 }
+
+.project-section{
+    overflow: initial;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+}
+.project_content{
+padding: 0 1.5rem;
+}
+
+.project-data{
+    margin-top: 29px;
+}
+.btn-project{
+    margin-top: 37px;
+}
 @media all and (min-width: 1440px) {
     .text{
         font-size: 27px;
