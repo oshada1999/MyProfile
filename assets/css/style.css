@@ -401,24 +401,104 @@ h5>span{
 .row img{
     width: 95px;
     height: 95px;
+}
+/*project CSS*/
+main>section:nth-child(5) {
+    padding: 100px 2%;
+}
+.slide-container{
+    width: 100%;
+    background-color: #546e7a;
+    padding: 40px 0;
+}
+.slide-container{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+.side-content{
+    margin: 0 40px;
+}
+.card{
+    width: 400px;
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.img-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.img-content{
+    position: relative;
+    row-gap: 5px;
+    border-radius: 25px 25px 0 25px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #214471;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #214471;
 
 }
-
-.project-section{
-    overflow: initial;
-    align-items: center;
-    margin-top: 5rem;
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color:#ffffff ;
+}
+.card-imge{
+    position: relative;
+    height: 180px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius:20px;
+    background: #FFF;
+    padding: 3px;
+}
+.card-imge .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:20px;
+    border: 4px solid cornflowerblue;
+}
+.detail{
+    font-size: 18px;
+    font-weight:500;
+    color: #546e7a;
     text-align: center;
 }
-.project_content{
-padding: 0 1.5rem;
+.card-content button{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: #677E98;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-
-.project-data{
-    margin-top: 29px;
-}
-.btn-project{
-    margin-top: 37px;
+.card-content button:hover{
+    background:#214471 ;
 }
 @media all and (min-width: 1440px) {
     .text{

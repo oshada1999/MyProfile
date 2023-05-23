@@ -218,55 +218,32 @@
             <h2>My<span>Project</span></h2>
             <h3>Recently Contribute</h3>
         </div>
-        <div class="project-section container swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="project_content grid swiper-slide">
-                    <img src="assets/images/Rectangle 41.png" alt="Rectangle 41.png" class="img">
-                    <div class="project-data">
-                        <h3 class="project-title">Hospital Management System
-                            JavaFX,Layered Architecture</h3>
-                        <div  class="btn-project">
-                            <a href="https://github.com/oshada1999/FamilyHospital-layered">View GitHub
-                                <i class="uil uil-arrow-right"></i>
-                            </a>
+        <div class="slide-container swiper mySwiper">
+            <div class="side-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="img-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-imge">
+                                <img class="card-img" src="assets/images/Screenshot 2023-03-09 150555.png" alt="Screenshot 2023-03-09 150555.png">
+                            </div>
                         </div>
-
-
+                        <div class="card-content">
+                            <h4 class="detail">
+                                Hospital Management System
+                                JavaFX,Layered
+                            </h4>
+                            <button class="button">View GitHub</button>
+                        </div>
                     </div>
                 </div>
-                <div class="project_content grid swiper-slide">
-                    <img src="assets/images/Rectangle 41 (1).png" alt="Rectangle 41 (1).png" class="img">
-                    <div class="project-data">
-                        <h3 class="project-title">Hostel Management System
-                            JavaFX,Layered Architecture,Hibernate</h3>
-                        <div  class="btn-project">
-                            <a href="https://github.com/oshada1999/Hostel-Management-System">View GitHub
-                                <i class="uil uil-arrow-right"></i>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="project_content grid swiper-slide">
-                    <img src="assets/images/Rectangle 41.png" alt="Rectangle 41.png" class="img">
-                    <div class="project-data">
-                        <h3 class="project-title">Hospital Management System
-                            JavaFX,Layered Architecture</h3>
-                        <div  class="btn-project">
-                            <a href="https://github.com/oshada1999/FamilyHospital-layered">View GitHub
-                                <i class="uil uil-arrow-right"></i>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <!--add rows-->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
 
         </div>
-
     </section>
 </main>
 <!--<main>
@@ -915,22 +892,25 @@
        loop:true
    })
 </script>
-<!--project swiper-->
+<!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
     });
 </script>
-
 </body>
 
 </html>
