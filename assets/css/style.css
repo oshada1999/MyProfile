@@ -436,6 +436,23 @@ h5>span{
      justify-content: center;
      align-items: center;
  }
+.project_button i{
+    font-size: 20px;
+}
+.project_button{
+    display: inline-block;
+    color: white;
+    background: #214471;
+    font-size: 14px;
+    padding: 6px 26px;
+    font-weight: 500;
+    line-height: 27px;
+    border-radius: 30px;
+    transition: ease .40s;
+}
+.project_button{
+    transform:scale(1.1) ;
+}
 .projects_container .swiper-button-next::after,
 .projects_container .swiper-button-prev::after{
     content: '';
