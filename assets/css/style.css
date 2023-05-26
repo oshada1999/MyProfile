@@ -403,102 +403,65 @@ h5>span{
     height: 95px;
 }
 /*project CSS*/
-main>section:nth-child(5) {
-    padding: 100px 2%;
+.project .heading{
+    margin-bottom: 30px;
 }
-.slide-container{
-    width: 100%;
-    background-color: #546e7a;
-    padding: 40px 0;
+.projects_container{
+    overflow: initial;
 }
-.slide-container{
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
+.projects_content{
+    display: grid;
     justify-content: center;
-    background-color: #EFEFEF;
 }
-.side-content{
-    margin: 0 40px;
+.projects_images{
+    width: 250px;
+    border-radius: .75rem;
+    margin-bottom: 1.25rem;
 }
-.card{
-    width: 400px;
-    border-radius: 25px;
-    background-color: #FFF;
+.project_title{
+    font-size: 15px;
+    margin-bottom: 1rem;
 }
-.img-content,
-.card-content{
-    display: flex;
-    flex-direction: column;
+.project_button{
+    display: inline-flex;
     align-items: center;
-    padding: 10px 14px;
+    column-gap: 5rem;
+    font-size: 10px;
 }
-.img-content{
-    position: relative;
-    row-gap: 5px;
-    border-radius: 25px 25px 0 25px;
-    padding: 25px 0;
-}
-.overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #214471;
-    border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
+.swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+.projects_container .swiper-button-next::after,
+.projects_container .swiper-button-prev::after{
     content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #214471;
-
 }
-.overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color:#ffffff ;
+.projects_container .swiper-button-prev,
+.projects_container .swiper-button-next{
+    width: initial;
+    height: initial;
+    margin: initial;
+    font-size: 2.5rem;
+    color: #591C21;
 }
-.card-imge{
-    position: relative;
-    height: 180px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius:20px;
-    background: #FFF;
-    padding: 3px;
+.projects_container .swiper-button-prev{
+    top: 3rem;
+    right: 37rem;
 }
-.card-imge .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius:20px;
-    border: 4px solid cornflowerblue;
+.projects_container .swiper-button-next{
+    top: 48px;
+    left: 37rem;
 }
-.detail{
-    font-size: 18px;
-    font-weight:500;
-    color: #546e7a;
-    text-align: center;
+.projects_container .swiper-slide{
+    margin-bottom: 4.5rem;
 }
-.card-content button{
-    border: none;
-    font-size: 16px;
-    color: white;
-    padding: 8px 16px;
-    background-color: #677E98;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.card-content button:hover{
-    background:#214471 ;
+main>section:nth-child(5){
+    padding: 100px 3%;
+    transition: .3s;
 }
 @media all and (min-width: 1440px) {
     .text{
@@ -514,6 +477,7 @@ main>section:nth-child(5) {
         padding: 100px 3%;
         transition: .3s;
     }
+
     /*main>section:nth-child(3){
         padding: 100px 3%;
         transition: .3s;
@@ -655,6 +619,10 @@ main>section:nth-child(5) {
     }
 }
 @media all and (max-width: 800px) {
+    .projects_container .swiper-button-next i,
+    .projects_container .swiper-button-prev i{
+        display: none;
+    }
      .about-text h3 {
         font-size: 18px;
     }
