@@ -226,7 +226,7 @@
                         <div>
                             <h1 class="project_title">Hospital Management System
                                 JavaFX and Layered Architecture</h1>
-                            <a href="https://github.com/oshada1999/FamilyHospital-layered" class="project_button">View GitHub  <i class="uil uil-expand-from-corner"></i></a>
+                            <a href="https://github.com/oshada1999/FamilyHospital-layered" class="project_button">View GitHub  <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="projects_content swiper-slide">
@@ -234,7 +234,7 @@
                         <div>
                             <h1 class="project_title">Hostel Management System
                                 JavaFX and Hibernate</h1>
-                            <a href="https://github.com/oshada1999/Hostel-Management-System" class="project_button">View GitHub  <i class="uil uil-expand-from-corner"></i></a>
+                            <a href="https://github.com/oshada1999/Hostel-Management-System" class="project_button">View GitHub  <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="projects_content swiper-slide">
@@ -242,16 +242,35 @@
                         <div>
                             <span class="projects_subtitle"></span>
                             <h1 class="project_title">My Profile create by HTML,CSS,JavaScript</h1>
-                            <a href="#" class="project_button">View GitHub  <i class="uil uil-expand-from-corner"></i></a>
+                            <a href="#" class="project_button">View GitHub  <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div><div class="projects_content swiper-slide">
+                        <img src="assets/images/Screenshot 2023-05-2.png" alt="Screenshot 2023-05-2.png" class="projects_images">
+                        <div>
+                            <span class="projects_subtitle"></span>
+                            <h1 class="project_title">My Profile create by HTML,CSS,JavaScript</h1>
+                            <a href="#" class="project_button">View GitHub  <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div><div class="projects_content swiper-slide">
+                        <img src="assets/images/Screenshot 2023-05-2.png" alt="Screenshot 2023-05-2.png" class="projects_images">
+                        <div>
+                            <span class="projects_subtitle"></span>
+                            <h1 class="project_title">My Profile create by HTML,CSS,JavaScript</h1>
+                            <a href="#" class="project_button">View GitHub  <i class="uil uil-arrow-right"></i></a>
+                        </div>
+                    </div><div class="projects_content swiper-slide">
+                        <img src="assets/images/Screenshot 2023-05-2.png" alt="Screenshot 2023-05-2.png" class="projects_images">
+                        <div>
+                            <span class="projects_subtitle"></span>
+                            <h1 class="project_title">My Profile create by HTML,CSS,JavaScript</h1>
+                            <a href="#" class="project_button">View GitHub  <i class="uil uil-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-button-next">
-                    <!--<i class="uil uil-angle-right-b"></i>-->
                     <i class="uil uil-arrow-circle-right"></i>
                 </div>
                 <div class="swiper-button-prev">
-                    <!--<i class="uil uil-angle-left-b"></i>-->
                     <i class="uil uil-arrow-circle-left"></i>
 
                 </div>
@@ -919,8 +938,20 @@
         pagination: {
             el: ".swiper-pagination",
         },
-        mousewheel: true,
-        keyboard: true,
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: -50,
+            },
+            450: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+            },
+        },
     });
 </script>
 </body>
