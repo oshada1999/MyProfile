@@ -476,12 +476,12 @@ h5 > span {
     margin-bottom: 30px;
 }
 
-.projects_container {
+.main_container {
     overflow: initial;
 
 }
 
-.projects_images {
+.main_images {
     border: 1px solid black;
     margin-top: 2rem;
     width: 250px;
@@ -490,12 +490,12 @@ h5 > span {
     margin-bottom: 1.25rem;
 }
 
-.project_title {
+.main_title {
     font-size: 15px;
     margin-bottom: 1rem;
 }
 
-.project_button {
+.main_button {
     display: inline-flex;
     align-items: center;
     column-gap: 5rem;
@@ -511,14 +511,14 @@ h5 > span {
     align-items: center;
 }
 
-.project_button i {
+.main_button i {
     font-size: 12px;
 }
-.swiper-wrapper .projects_content{
+.swiper-wrapper .content{
     width: 200px;
     height: 400px;
 }
-.project_button {
+.main_button {
     display: inline-block;
     color: white;
     background: #214471;
@@ -530,17 +530,17 @@ h5 > span {
     transition: ease .40s;
 }
 
-.project_button {
+.main_button {
     transform: scale(1.1);
 }
 
-.projects_container .swiper-button-next::after,
-.projects_container .swiper-button-prev::after {
+.main_container .swiper-button-next::after,
+.main_container .swiper-button-prev::after {
     content: '';
 }
 
-.projects_container .swiper-button-prev,
-.projects_container .swiper-button-next {
+.main_container .swiper-button-prev,
+.main_container .swiper-button-next {
     width: initial;
     height: initial;
     margin: initial;
@@ -548,19 +548,19 @@ h5 > span {
     color: #591C21;
 }
 
-.projects_container .swiper-button-prev {
+.main_container .swiper-button-prev {
     position: absolute;
     top: 8rem;
     left: 2rem;
 }
 
-.projects_container .swiper-button-next {
+.main_container .swiper-button-next {
     position: absolute;
     top: 8rem;
     right: 2rem;
 }
 
-.projects_container .swiper-slide {
+.main_container .swiper-slide {
     margin-bottom: -2rem;
 }
 
@@ -569,6 +569,10 @@ main > section:nth-child(5) {
     transition: .3s;
 }
 /*assignment*/
+.assignment .heading {
+    margin-bottom: 30px;
+}
+
 main > section:nth-child(6) {
     padding: 100px 3%;
     transition: .3s;
@@ -754,8 +758,8 @@ main > section:nth-child(6) {
 }
 
 @media all and (max-width: 800px) {
-    .projects_container .swiper-button-next i,
-    .projects_container .swiper-button-prev i {
+    .main_container .swiper-button-next i,
+    .main_container .swiper-button-prev i {
         display: none;
     }
 
