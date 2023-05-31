@@ -567,7 +567,11 @@ main > section:nth-child(5) {
     padding: 100px 3%;
     transition: .3s;
 }
-
+/*assignment*/
+main > section:nth-child(6) {
+    padding: 100px 3%;
+    transition: .3s;
+}
 @media all and (min-width: 1440px) {
     .text {
         font-size: 27px;
