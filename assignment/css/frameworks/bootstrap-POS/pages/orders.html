@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+
+    <title>Orders</title>
+</head>
+
+<body class="container-fluid">
+<main class="container-fluid" id="orderPage"><br>
+    <section class="card">
+        <p class="card-header">Home>Order</p>
+        <div class="card-body" style="background-color: #E9ECEF; width: 100%">
+            <div class="row ">
+                <div class="col-4">
+                    <div class="card border-secondary">
+                        <h3 class="card-header text-white" style="background-color:#008900">Customer Select</h3>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Order ID</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="O001">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Date</label>
+                                        <input type="date" class="form-control" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Customer ID</label>
+                                        <select id="customerID" class="form-select">
+                                            <option>C001</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="Nimal">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Salary</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="75000.00">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Address</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="Colombo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card border-secondary">
+                        <h3 class="card-header bg-secondary text-white">Item Select</h3>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Item ID</label>
+                                        <select id="itemID" class="form-select">
+                                            <option>I001</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="Samba 5kg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label"> UnitPrice</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="450.00">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">QTY On Hand</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="50">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="mb-3">
+                                        <label class="form-label">Order QTY</label>
+                                        <input type="text" class="form-control" aria-describedby="emailHelp"
+                                               placeholder="2">
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-warning small"
+                                            style="position: absolute;bottom: 2vw;right: 1vw">Add Item
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-warning">
+                        <div class="card-body">
+                            <div class="row">
+                                <h3 style="color: indianred">Net Total : 5000.00</h3>
+                            </div>
+                            <br>
+
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="amountInput" class="form-label">Cash</label>
+                                    <input type="number" class="form-control" id="amountInput" placeholder="0.00">
+                                </div>
+                                <div class="col-6">
+                                    <label for="discountInput" class="form-label">Discount</label>
+                                    <input type="number" class="form-control" id="discountInput" placeholder="0.00">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row-10">
+                                <label for="balanceInput" class="form-label">Balance</label>
+                                <input type="number" class="form-control" id="balanceInput" placeholder="0.00">
+                            </div>
+                            <br>
+                            <div class="row-3">
+                                <button type="button" class="btn btn-success">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row-12" style="width: 100%">
+                <table class="table table-bordered" style="border: 2px solid green">
+                    <thead style="background-color: #08A389">
+                    <tr>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">UnitPrice</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Option</th>
+                    </tr>
+                    </thead>
+                    <tbody style="background-color: white">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>samba(1.0 kg)</td>
+                        <td>450.00</td>
+                        <td>2</td>
+                        <td>900.00</td>
+                        <td>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+    <script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

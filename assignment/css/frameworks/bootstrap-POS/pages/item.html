@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <title>Item</title>
+</head>
+
+<body>
+<main class="container-fluid" id="itemPage"><br>
+
+    <section class="card">
+        <p class="card-header">Home>Item</p>
+        <div class="card-body" style="background-color: #E9ECEF; width: 100%">
+            <div class="row " style="width: 100%">
+                <div class="col-6">
+                    <div class="card border-secondary" style="width: 400px; height: 200px">
+                        <h3 class="card-header bg-secondary text-white">Search Item</h3>
+                        <div class="card-body">
+                            <input class="form-control" type="text" placeholder="Search ID OR Name"
+                                   aria-label="default input example"><br>
+                            <button type="button" class="btn btn-secondary">Search</button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn" style="background-color: #3CA6A6">Details</button>
+                    </div>
+                </div>
+                <div class="col-6 align-items-end">
+                    <div class="btn-group" role="group" aria-label="Basic example"
+                         style="position: absolute;right: 5vw">
+                        <button type="button" class="btn text-white" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                style="background-color: #015958">+New Item
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Save Item</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label class="form-label">ID</label>
+                                                <input type="text" class="form-control" aria-describedby="emailHelp">
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Description</label>
+                                                <input type="text" class="form-control" aria-describedby="emailHelp">
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">UnitPrice</label>
+                                                <input type="text" class="form-control" aria-describedby="emailHelp">
+
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="qtyInput" class="form-label">Qty</label>
+                                                <input type="number" class="form-control" id="qtyInput"
+                                                       aria-describedby="emailHelp">
+
+                                            </div>
+                                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                                <button type="button" class="btn btn-success">+Add new Item</button>
+                                                <button type="button" class="btn btn-warning">Update Item</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn " style="background-color: #FFCF48">All Item</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row-12" style="width: 100%">
+                <table class="table table-bordered" style="border: 2px solid green">
+                    <thead style="background-color: #08A389">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">UnitPrice</th>
+                        <th scope="col">QTY</th>
+                    </tr>
+                    </thead>
+                    <tbody style="background-color: white">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Rice(1.0 kg)</td>
+                        <td>500.00</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>lentils(1.0kg)</td>
+                        <td>300.00</td>
+                        <td>50</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../assets/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
