@@ -482,6 +482,7 @@ h5 > span {
 }
 
 .projects_images {
+    border: 1px solid black;
     margin-top: 2rem;
     width: 250px;
     height: 140px;
@@ -572,6 +573,7 @@ main > section:nth-child(6) {
     padding: 100px 3%;
     transition: .3s;
 }
+
 @media all and (min-width: 1440px) {
     .text {
         font-size: 27px;
