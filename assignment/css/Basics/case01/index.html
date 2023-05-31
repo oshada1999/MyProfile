@@ -1,10 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>CSS Layout Case 01</title>
+  <style>
+
+    section:first-child{
+      background-color: crimson;
+      width: 50vw;
+      height: 50vh;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    section:nth-child(2){
+      background-color: #0fbd2f;
+      width: 50vw;
+      height: 50vh;
+
+
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    section:nth-child(3){
+      background-color: #efb216;
+      width: 50vw;
+      height: 50vh;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+    }
+
+    section:nth-child(4){
+      background-color: deeppink;
+      width: 50vw;
+      height: 50vh;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+    }
+
+    body>div{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>div>div{
+      width: 5vw;
+      height: 5vw;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      background-color: red;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:first-child>div{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:first-child>div>div{
+      width: 5vw;
+      height: 5vw;
+      background-color: red;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:nth-child(2)>div{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:nth-child(2)>div>div{
+      width: 5vw;
+      height: 5vw;
+      background-color: red;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:nth-child(3)>div:first-child{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:nth-child(3)>div>div{
+      width: 5vw;
+      height: 5vw;
+      background-color: red;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:nth-child(4)>div:first-child{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:nth-child(4)>div>div{
+      width: 5vw;
+      height: 5vw;
+      background-color: red;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    body>main>section:nth-child(4)+div{
+      width: 12vw;
+      height: 12vw;
+      background-color: white;
+
+      position: absolute;
+      top: -6vw;
+      left: 0;
+      right: 0;
+      margin: auto;
+      /*top: -80px;*/
+      border-radius:50% 50% 50% 50%;
+
+    }
+
+    body>main>section:nth-child(3)>div+div{
+      width: 7vw;
+      height: 7vw;
+      background-color: white;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      border-radius:100% 0% 0% 0%;
+
+    }
+
+    body>main>section:nth-child(4)>div+div{
+      width: 7vw;
+      height: 7vw;
+      background-color: white;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      border-radius:0% 100% 0% 0%;
+
+    }
+
+    body>main>section:nth-child(4)+div+div+div{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      position: absolute;
+      top: 0vw;
+      left: 0vw;
+      margin: auto;
+      /*top: -80px;*/
+      border-radius:00% 0% 100% 0%;
+
+    }
+
+    body>main>section:nth-child(4)+div+div+div+div{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      position: absolute;
+      bottom: 0vw;
+      left: 0vw;
+      margin: auto;
+      /*top: -80px;*/
+      border-radius:0% 100% 0% 0%;
+
+    }
+
+    body>main>section:nth-child(4)+div+div+div+div+div{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      position: absolute;
+      top: 0vw;
+      right: 0vw;
+      margin: auto;
+      /*top: -80px;*/
+      border-radius:0% 0% 0% 100%;
+
+    }
+
+    body>main>section:nth-child(4)+div+div+div+div+div+div{
+      width: 10vw;
+      height: 10vw;
+      background-color: white;
+
+      position: absolute;
+      bottom: 0vw;
+      right: 0vw;
+      margin: auto;
+      /*top: -80px;*/
+      border-radius:100% 0% 0% 0%;
+
+    }
+
+  </style>
+
 </head>
 <body>
+<main>
+
+  <section>
+
+    <div>
+      <div></div>
+    </div>
+
+  </section>
+
+  <section>
+    <div>
+      <div></div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <div></div>
+    </div>
+
+    <div></div>
+  </section>
+
+  <section>
+    <div>
+      <div></div>
+    </div>
+
+    <div></div>
+  </section>
+
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+
+</main>
+
+<div>
+  <div></div>
+</div>
+
+
 
 </body>
 </html>

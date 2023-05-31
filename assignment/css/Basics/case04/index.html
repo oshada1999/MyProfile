@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Layout Case 04</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+      .window{
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+
+        position: relative;
+
+      }
+
+      .window2{
+          width: 100vw;
+          height: 100vh;
+          background-color: #69c2c5;
+
+          position: relative;
+
+      }
+
+      .window3{
+          width: 100vw;
+          height: 100vh;
+          background-color: #353636;
+
+          position: relative;
+
+      }
+
+      .window4{
+          width: 100vw;
+          height: 100vh;
+          background-color: red;
+
+          position: relative;
+
+      }
+      .div_1{
+        width: 100vw;
+        height: 10vh;
+        background-color: red;
+
+        position: sticky;
+        top: 0px;
+        left: 0px;
+
+      }
+
+      .div_2{
+          width: 100vw;
+          height: 10vh;
+          background-color: blue;
+
+          position: sticky;
+          top: 0px;
+
+      }
+
+      .div_3{
+          width: 100vw;
+          height: 10vh;
+          background-color: #000000;
+
+          position: sticky;
+          top: 0px;
+
+      }
+
+      .div_4{
+          width: 100vw;
+          height: 10vh;
+          background-color: #6e1d1d;
+
+          position: sticky;
+          top: 0px;
+
+      }
+
+      label{
+          font-weight: bolder;
+          font-size: 100px;
+      }
+
+      .label_po{
+          width: 100px;
+          height: 100px;
+
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+      }
+
+      .label_top{
+          color: white;
+          font-weight: bolder;
+          font-size: 30px;
+      }
+
+      .div_top{
+          width: 100px;
+          height: 10px;
+
+          position: absolute;
+          bottom: 60%;
+          margin: auto;
+      }
+    </style>
+</head>
+<body>
+
+  <section class="window">
+      <div>
+          <div class="label_po">
+              <label>Hello</label>
+          </div>
+      </div>
+    <div class="div_1">
+        <div class="div_top">
+            <label class="label_top">Case 1</label>
+        </div>
+    </div>
+  </section>
+
+  <section class="window2">
+      <div class="label_po">
+          <label>How</label>
+      </div>
+      <div class="div_2">
+          <div class="div_top">
+              <label class="label_top">Case 2</label>
+          </div>
+      </div>
+  </section>
+
+  <section class="window3">
+      <div class="label_po">
+          <label>Are</label>
+      </div>
+      <div class="div_3">
+          <div class="div_top">
+              <label class="label_top">Case 3</label>
+          </div>
+      </div>
+  </section>
+
+  <section class="window4">
+      <div class="label_po">
+          <label>You?</label>
+      </div>
+      <div class="div_4">
+          <div class="div_top">
+              <label class="label_top">Case 4</label>
+          </div>
+      </div>
+  </section>
+</body>
+</html>
