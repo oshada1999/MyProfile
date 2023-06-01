@@ -597,8 +597,23 @@ main > section:nth-child(7) {
     padding: 10px 50px;
     position: relative;
     width: 50%;
+    cursor: pointer;
     animation: movedown 1s linear forwards;
     opacity: 0;
+
+}
+.edu-container:hover .edu-text-box{
+    box-shadow: 1px 1px 2px 1px #babbbc;
+    transform: scale(1.1);
+}
+.edu-container:hover .edu-text-box .arrow {
+    border-left: 15px solid #babbbc;
+}
+.edu-container:hover .edu-text-box .arrow-right {
+    border-right: 15px solid #babbbc;
+}
+.edu-container:hover .ovel{
+    transform: scale(1.1);
 }
 @keyframes movedown {
     0%{
@@ -625,6 +640,7 @@ main > section:nth-child(7) {
     position: relative;
     border-radius: 6px;
     font-size: 15px;
+    transition: .4s;
 }
 
 .left-container {
@@ -637,17 +653,27 @@ main > section:nth-child(7) {
 
 .ovel {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    right: -9px;
+    right: -15px;
     top: 43px;
     z-index: 10;
-    background-color: #0f5132;
+    background-color: #8C1F28;
+    transition: .4s;
 }
+.ovel img{
+    width: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
 
+}
 .right-container .ovel {
-    left: -11px;
+    left: -15px;
 }
 
 .edu-timeline::after {
@@ -655,7 +681,7 @@ main > section:nth-child(7) {
     position: absolute;
     width: 4px;
     height: 100%;
-    background: #eeeeee;
+    background: #2b2f32;
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -676,7 +702,7 @@ main > section:nth-child(7) {
 }
 .edu-text-box h2 {
     margin-bottom: 10px;
-    color: #546e7a;
+    color: #0f5132;
 }
 .edu-text-box p {
     font-size: 13px;
@@ -691,7 +717,7 @@ main > section:nth-child(7) {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 15px solid #eeeeee;
-    right: -15px;
+    right: -14px;
 
 }
 .right-container-arrow{
@@ -703,7 +729,7 @@ main > section:nth-child(7) {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid #eeeeee;
-    left: -15px;
+    left: -14px;
 
 }
 @media all and (min-width: 1440px) {
