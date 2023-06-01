@@ -952,6 +952,13 @@ main > section:nth-child(7) {
     .service-content {
         grid-template-columns:repeat(auto-fit, minmax(250px, auto));
     }
+    .col span {
+        font-size: 20px;
+    }
+
+    .col h3 {
+        font-size: 12px;
+    }
 }
 
 @media all and (max-width: 450px) {
