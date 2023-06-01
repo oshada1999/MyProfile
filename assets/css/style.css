@@ -890,7 +890,12 @@ main > section:nth-child(7) {
     .left-container .ovel,.right-container .ovel{
         left: 20px;
     }
-    
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #eeeeee;
+        border-left: 0;
+        left: -15px;
+    }
+
 }
 @media all and (min-width: 800px) and (max-width: 1020px) {
 
