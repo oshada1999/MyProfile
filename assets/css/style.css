@@ -959,6 +959,12 @@ main > section:nth-child(7) {
     .col h3 {
         font-size: 12px;
     }
+    .heading h2 {
+        font-size: 25px;
+    }
+    .heading h3 {
+        font-size: 13px;
+    }
 }
 
 @media all and (max-width: 450px) {
