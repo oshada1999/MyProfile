@@ -883,6 +883,7 @@ main > section:nth-child(7) {
     }
     .edu-text-box h2{
         margin-bottom: 10px;
+        font-size: 15px;
     }
     .right-container{
         left: 0;
