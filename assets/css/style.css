@@ -1205,6 +1205,9 @@ form textarea{
 }
 
 @media all and (max-width: 450px) {
+    .contact-row{
+        font-size: 13px;
+    }
     main > section:nth-child(3) {
         padding: 100px 8%;
     }
