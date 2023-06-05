@@ -976,7 +976,7 @@ form textarea{
 
 .footer-h1,.footer-h3{
     color: white;
-    margin-left: 70px;
+    margin-left: 5vw;
 }
 .footer-center{
     flex-basis: 50%;
@@ -1006,7 +1006,7 @@ form textarea{
 }
 .footer-right>div{
     margin-top: 20px;
-    margin-left: 180px;
+    margin-left: 12vw;
     color: white;
 }
 .footer-left>div{
@@ -1018,6 +1018,8 @@ margin-top: 80px;
 }
 .footer-center>div:nth-child(1){
     margin-top: 60px;
+    margin-left: 2.5vw;
+
 }
 @media all and (min-width: 1440px) {
     .text {
@@ -1026,6 +1028,9 @@ margin-top: 80px;
 }
 
 @media all and (max-width: 1440px) {
+    .footer-left>div{
+        font-size: 13px;
+    }
     main > section:nth-child(1) {
         padding: 100px 3%;
         transition: .3s;
@@ -1078,7 +1083,12 @@ margin-top: 80px;
 }
 
 @media all and (max-width: 1020px) {
-
+    .footer-right>div {
+        margin-left: 7vw;
+    }
+    .footer-h3{
+        font-size: 14px;
+    }
      main > section:nth-child(9) {
         padding: 100px 6%;
         transition: .3s;
@@ -1186,7 +1196,41 @@ margin-top: 80px;
 }
 
 @media all and (max-width: 600px) {
+    .footer-center>div:nth-child(1) {
+        margin-left: 22px;
+    }
+    .footer{
+        flex-direction: column;
+        height: 470px;
+    }
+    .footer-left{
+        text-align: center;
+    }
+   .footer-right{
+       text-align: center;
+       order: 2;
+   }
+   .footer-center{
+       text-align: center;
+       height: 200px;
+       order: 3;
+   }
+    .footer-right>div{
+        margin-left: 0;
+    }
+    .footer-center p {
+        margin-top: 20px;
+    }
+    .footer-center>div:nth-child(1){
+        margin-left: 0;
 
+    }
+    .footer-h1,.footer-h3{
+        margin-left:0;
+    }
+    .footer-center{
+        align-items: end;
+    }
     .edu-timeline {
         margin: 50px auto;
     }
@@ -1247,6 +1291,10 @@ margin-top: 80px;
 }
 
 @media all and (max-width: 800px) {
+    .footer-center img{
+        width: 35px;
+        margin-right: 20px;
+    }
     .contact-row{
         flex-direction: column;
         align-items: start;
