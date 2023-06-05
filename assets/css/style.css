@@ -1196,8 +1196,14 @@ margin-top: 80px;
 }
 
 @media all and (max-width: 600px) {
-    .footer-center>div:nth-child(1) {
-        margin-left: 22px;
+    .footer-right>div>h3 {
+
+        margin-top: 20px;
+
+    }
+    .footer-center img{
+        margin-left:10px;
+        margin-right: 10px;
     }
     .footer{
         flex-direction: column;
