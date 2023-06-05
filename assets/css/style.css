@@ -913,8 +913,8 @@ form textarea{
 .fab-btn {
     width: 60px;
     height: 60px;
-    background: #AE514A;
-    box-shadow: 0 0 0 0 #d23f31;
+    background: #127369;
+    box-shadow: 0 0 0 0 #8AA6A3;
     animation: pulse-red 2s infinite;
 }
 .fab-icon-holder {
@@ -940,7 +940,7 @@ form textarea{
 @keyframes pulse-red {
     0% {
         transform: scale(.95);
-        box-shadow: 0 0 0 0 rgba(255,82,82,.7);
+        box-shadow: 0 0 0 0 #8AA6A3;
     }
 
     70% {
@@ -964,24 +964,26 @@ form textarea{
     align-items: center;
 }
 .footer-left{
+    height: 220px;
     flex-basis: 25%;
     justify-content: center;
     align-items: center;
 }
 .footer-center p{
     color: white;
+    font-size: 12px;
 }
 
 .footer-h1,.footer-h3{
     color: white;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 .footer-center{
     flex-basis: 50%;
     height: 220px;
     text-align: center;
 }
-.footer-center>div:nth-child(1){
+.footer-center>div:nth-child(2){
    position: absolute;
     left: 0;
     right: 0;
@@ -991,12 +993,31 @@ form textarea{
 .footer-right{
     flex-basis: 25%;
 }
-.footer-right img{
-    width: 50px;
-    margin-right: 20px;
+.footer-right>div>h3{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer-right>div>h3>i{
+    margin-right: 10px;
+}
+.footer-right>div>p{
+    font-size: 12px;
 }
 .footer-right>div{
-    margin-left: 60px;
+    margin-top: 20px;
+    margin-left: 180px;
+    color: white;
+}
+.footer-left>div{
+margin-top: 30px;
+}
+.footer-center img{
+    width: 50px;
+    margin-right: 10px;
+}
+.footer-center>div:nth-child(1){
+    margin-top: 60px;
 }
 @media all and (min-width: 1440px) {
     .text {
