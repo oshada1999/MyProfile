@@ -976,7 +976,7 @@ form textarea{
 
 .footer-h1,.footer-h3{
     color: white;
-    margin-left: 60px;
+    margin-left: 70px;
 }
 .footer-center{
     flex-basis: 50%;
@@ -1010,11 +1010,11 @@ form textarea{
     color: white;
 }
 .footer-left>div{
-margin-top: 30px;
+margin-top: 80px;
 }
 .footer-center img{
     width: 50px;
-    margin-right: 10px;
+    margin-right: 40px;
 }
 .footer-center>div:nth-child(1){
     margin-top: 60px;
