@@ -47,11 +47,11 @@
     <img src="assets/gif/preloader.gif" alt="">
 </div>-->
 <header>
-    <img src="assets/images/2 (4).png" alt="2 (4).png">
+    <img src="assets/images/2 (4).png" alt="2 (4).png" data-aos="fade-right">
     <div class="bx bx-menu" id="menu-icon"><i class="fa-solid fa-bars"></i></div>
     <nav>
 
-        <ul class="navlist">
+        <ul class="navlist" data-aos="fade-up">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Service</a></li>
@@ -62,18 +62,18 @@
 
         </ul>
     </nav>
-    <a href="assets/dox/Doc1.pdf" download="oshada_hewage_cv.pdf" class="top-button">Download CV</a>
+    <a href="assets/dox/Doc1.pdf" download="oshada_hewage_cv.pdf" class="top-button" data-aos="fade-left">Download CV</a>
 
 </header>
 <main>
     <!--home -->
     <section id="home" class="home">
-        <div class="home-text">
-            <h3>Hello,I'm</h3>
-            <h1>Oshada hewage</h1>
-            <h5>And I'm a <span class="text"></span></h5>
-            <p>i'm very passionate and dedicated to my work</p>
-            <div class="social">
+        <div class="home-text"  >
+            <h3 data-aos="fade-right"  data-aos-duration="1000">Hello,I'm</h3>
+            <h1 data-aos="fade-right"  data-aos-duration="1500">Oshada hewage</h1>
+            <h5 data-aos="fade-right"  data-aos-duration="2000">And I'm a <span class="text"></span></h5>
+            <p data-aos="fade-right"  data-aos-duration="2500"> i'm very passionate and dedicated to my work</p>
+            <div class="social" data-aos="fade-right"  data-aos-duration="3000">
                 <a href="https://www.facebook.com/chathura.hewage.9/"><i
                         class="fa-brands fa-square-facebook fa-beat"></i></i></a>
                 <a href="https://www.linkedin.com/in/chathura-hewage-114565236/"><i
@@ -83,9 +83,9 @@
                 <a href="https://github.com/oshada1999"><i class="fa-brands fa-square-twitter fa-beat"></i></a>
 
             </div>
-            <a href="#about" class="btn">About Me</a>
+            <a href="#about" class="btn" data-aos="fade-right"  data-aos-duration="3500">About Me</a>
         </div>
-        <div class="home-img">
+        <div class="home-img" data-aos="zoom-in-left">
             <img src="assets/images/Rectangle%202%20(1).png" alt="New Project (2).png">
         </div>
 
@@ -93,13 +93,13 @@
     </section>
     <!--About Me-->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="assets/images/output-onlinepngtools%20(1).png" alt="New Project (7).png">
         </div>
         <div class="about-text">
-            <h3>I’m a Developer</h3>
-            <h2>I Can Design Anything You Want</h2>
-            <p>
+            <h3 data-aos="fade-left" data-aos-duration="1000">I’m a Developer</h3>
+            <h2 data-aos="fade-left" data-aos-duration="1500">I Can Design Anything You Want</h2>
+            <p data-aos="fade-left" data-aos-duration="2000">
                 My name is Oshada hewage. I’m first year student at IJSE(Institute of Software Engineering).I’m
                 currently
                 learning more about software development, web development and internet technologies. I like to
@@ -107,14 +107,14 @@
                 mobile application design. I like to work as freelance UI/UX designer. and web developer.
 
             </p>
-            <a href="tel:+94702229087" class="btn">Hire Me</a>
+            <a href="tel:+94702229087" class="btn" data-aos="fade-left" data-aos-duration="2500">Hire Me</a>
         </div>
     </section>
     <!--My Awesome Service-->
     <section class="service" id="service">
         <div class="heading">
-            <h2>My Awesome <span>Service</span></h2>
-            <h3>What I Do For Client</h3>
+            <h2 data-aos="zoom-out-up">My Awesome <span>Service</span></h2>
+            <h3 data-aos="zoom-out-up">What I Do For Client</h3>
         </div>
 
         <div class="service-content">
@@ -1101,7 +1101,9 @@
 <!--swiper JS-->
 <script src="assets/lib/swiper-bundle.min.js"></script>
 <script>
-    AOS.init();//init AOS
+    AOS.init({
+        duration:3000
+    });//init AOS
 
     $(document).ready(() => {
         setTimeout(() => {

@@ -118,6 +118,7 @@ main > section {
     position: relative;
     display: flex;
     align-items: center;
+
     /*grid-template-columns: repeat(2,1fr);
     align-items: center;
     grid-gap: 4rem;*/
@@ -127,11 +128,16 @@ main > section {
 .home-text {
     height: 100%;
     width: 100%;
+    transition: ease .45s;
 }
 
 .home-img {
     height: 100%;
     width: 100%;
+
+}
+#home-img1{
+    transition: ease .45s!important;
 }
 
 .home-img img:hover {
@@ -193,8 +199,9 @@ h5 > span {
     transition: ease .40s;
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.btn:hover{
+    transform: scale(1.1)!important;
+
 }
 
 .home-img img {
