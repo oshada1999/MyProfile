@@ -56,17 +56,17 @@ nav a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    background: chocolate;
+    background: chocolate!important;
     bottom: -3px;
     left: 0;
-    transition: ease .40s;
+    transition: ease .40s!important;
 
 }
 
 nav a:hover::after {
     width: 100%;
     box-shadow: 1px 1px 10px 2px;
-    transform: scale(1.1);
+    transform: scale(1.1)!important;
 }
 
 header.sticky {
@@ -78,21 +78,21 @@ header.sticky {
 .top-button {
     display: inline-block;
     padding: 9px 30px;
-    background: transparent;
+    background: transparent!important;
     border: 2px solid brown;
     border-radius: 30px;
     color: black;
     font-size: 13px;
     font-weight: 500;
-    transition: ease, .50s;
+    transition: ease, .50s!important;
 }
 
 .top-button:hover {
-    transform: scale(1.1);
-    background: #591C21;
-    color: white;
-    border: 2px solid #591C21;
-    box-shadow: 1px 1px 10px 2px #966774;
+    transform: scale(1.1)!important;
+    background: #591C21!important;
+    color: white!important;
+    border: 2px solid #591C21!important;
+    box-shadow: 1px 1px 10px 2px #966774!important;
 }
 
 #menu-icon {
@@ -128,7 +128,7 @@ main > section {
 .home-text {
     height: 100%;
     width: 100%;
-    transition: ease .45s;
+    transition: ease .45s!important;
 }
 
 .home-img {
@@ -142,8 +142,8 @@ main > section {
 
 .home-img img:hover {
     will-change: transform;
-    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
-    transition: ease .45s;
+    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05)!important;
+    transition: ease .45s!important;
 }
 
 .home-text h3 {
@@ -277,7 +277,7 @@ h5 > span {
     box-shadow: 18px 0px 87px 0px rgb(10 15 70/7%);
     border-radius: 12px;
     padding: 45px 45px 45px 45px;
-    transition: ease .45s;
+    transition: ease .45s!important;
     cursor: pointer;
 }
 
@@ -324,14 +324,14 @@ h5 > span {
 
 .col:hover {
     will-change: transform;
-    transform: perspective(1000px) rotateX(10.23deg) rotateY(4.80deg) scale3d(1.05, 1.05, 1.05);
+    transform: perspective(1000px) rotateX(10.23deg) rotateY(4.80deg) scale3d(1.05, 1.05, 1.05)!important;
 }
 
 .col:nth-child(1):hover {
 
     background: #91A5AE;
     box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
-    transition: .5s;
+    transition: .5s!important;
 }
 
 .col:nth-child(1):hover .s.se-one img {
@@ -852,7 +852,7 @@ main > section:nth-child(7) {
     color: #AE514A;
     margin-right: 15px;
     font-size: 20px;
-    transition: ease .40s;
+    transition: ease .40s!important;
 }
 .contact-right form{
     margin-top: 40px;
@@ -891,7 +891,7 @@ form textarea{
     cursor: pointer;
 }
 .contact-btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.1)!important;
     color: white;
     border: 2px solid #214471;
     box-shadow: #214471 1px 1px 10px 2px;
