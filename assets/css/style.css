@@ -887,7 +887,7 @@ form textarea{
     font-weight: 500;
     line-height: 27px;
     border-radius: 30px;
-    transition: ease .40s;
+    transition: ease .40s!important;
     cursor: pointer;
 }
 .contact-btn:hover{
