@@ -910,10 +910,10 @@ form textarea{
     transition: bottom 250ms ease-out;
 }
 .fab-container {
-    position: fixed;
+    position: fixed!important;
     bottom: 30px;
     right: 40px;
-    z-index: 999;
+    z-index: 999!important;
     cursor: pointer;
     transition: bottom 250ms ease-out;
 }
