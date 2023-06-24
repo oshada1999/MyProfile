@@ -595,10 +595,12 @@ main > section:nth-child(6) {
 }
 .btn-view{
     display: inline-block;
+    background-color: #ffcd39;
     color: black;
     border: 2px solid #214471;
     cursor: pointer;
     font-size: 15px;
+    margin-left: 20px;
     margin-top: 5px;
     padding: 6px 18px;
     font-weight: 500;
@@ -607,7 +609,8 @@ main > section:nth-child(6) {
     transition: .5s;
 }
 .btn-view:hover{
-    background-color: #ffcd39;
+    transform: scale(1.1);
+    background-color: white;
     transition: .5s;
 }
 /*education*/
